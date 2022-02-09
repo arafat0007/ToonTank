@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_pawn_turret" kind="class" prot="public">
+    <compoundname>APawnTurret</compoundname>
+    <basecompoundref refid="class_a_pawn_base" prot="public" virt="non-virtual">APawnBase</basecompoundref>
+    <basecompoundref refid="class_a_pawn_base" prot="public" virt="non-virtual">APawnBase</basecompoundref>
+    <includes refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" local="no">PawnTurret.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_pawn_turret_1a448016e6b3032fddf443128524b38a85" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float APawnTurret::FireRate</definition>
+        <argsstring></argsstring>
+        <name>FireRate</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="18" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="9" endline="17">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float APawnTurret::FireRange</definition>
+        <argsstring></argsstring>
+        <name>FireRange</name>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="20" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="32" endline="40">CheckFireCondition</referencedby>
+        <referencedby refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="20" endline="30">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_turret_1a7a6149cecfdb46817439b6efd8e674dc" prot="private" static="no" mutable="no">
+        <type>FTimerHandle</type>
+        <definition>FTimerHandle APawnTurret::FireRateTimerHandle</definition>
+        <argsstring></argsstring>
+        <name>FireRateTimerHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="21" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="9" endline="17">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_pawn_tank" kindref="compound">APawnTank</ref> *</type>
+        <definition>APawnTank * APawnTurret::PlayerPawn</definition>
+        <argsstring></argsstring>
+        <name>PlayerPawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="22" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="9" endline="17">BeginPlay</referencedby>
+        <referencedby refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="32" endline="40">CheckFireCondition</referencedby>
+        <referencedby refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="42" endline="49">ReturnDistanceToPlayer</referencedby>
+        <referencedby refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="20" endline="30">Tick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnTurret::CheckFireCondition</definition>
+        <argsstring>()</argsstring>
+        <name>CheckFireCondition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="24" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.cpp" bodystart="32" bodyend="40"/>
+        <references refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="40" endline="48">APawnBase::Fire</references>
+        <references refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="20">FireRange</references>
+        <references refid="class_a_pawn_tank_1aa5dfed747d5244a8bc5d7829ab7d07bc" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" startline="61" endline="64">APawnTank::GetIsPlayerAlive</references>
+        <references refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="22">PlayerPawn</references>
+        <references refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="42" endline="49">ReturnDistanceToPlayer</references>
+        <referencedby refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="9" endline="17">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float APawnTurret::ReturnDistanceToPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>ReturnDistanceToPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="25" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.cpp" bodystart="42" bodyend="49"/>
+        <references refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="22">PlayerPawn</references>
+        <referencedby refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="32" endline="40">CheckFireCondition</referencedby>
+        <referencedby refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="20" endline="30">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnTurret::CheckFireCondition</definition>
+        <argsstring>()</argsstring>
+        <name>CheckFireCondition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float APawnTurret::ReturnDistanceToPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>ReturnDistanceToPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void APawnTurret::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="29" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.cpp" bodystart="20" bodyend="30"/>
+        <references refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="20">FireRange</references>
+        <references refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="22">PlayerPawn</references>
+        <references refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="42" endline="49">ReturnDistanceToPlayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void APawnTurret::HandleDestruction</definition>
+        <argsstring>() override</argsstring>
+        <name>HandleDestruction</name>
+        <reimplements refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2">HandleDestruction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="31" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.cpp" bodystart="51" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1a87a69081daadfe3d8dfff4eb781c91fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void APawnTurret::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1aada87f18d08f0cb4c79da4fcd5618d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void APawnTurret::HandleDestruction</definition>
+        <argsstring>() override</argsstring>
+        <name>HandleDestruction</name>
+        <reimplements refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2">HandleDestruction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.h" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void APawnTurret::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="35" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.cpp" bodystart="9" bodyend="17"/>
+        <references refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1">BeginPlay</references>
+        <references refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="32" endline="40">CheckFireCondition</references>
+        <references refid="class_a_pawn_turret_1a448016e6b3032fddf443128524b38a85" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="18">FireRate</references>
+        <references refid="class_a_pawn_turret_1a7a6149cecfdb46817439b6efd8e674dc" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="21">FireRateTimerHandle</references>
+        <references refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" startline="22">PlayerPawn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_turret_1aef4ab1239e3cb05b281f76a6d91c1903" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void APawnTurret::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.h" line="35" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>APawnBase</label>
+        <link refid="class_a_pawn_base"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>APawn</label>
+      </node>
+      <node id="12">
+        <label>APawnTurret</label>
+        <link refid="class_a_pawn_turret"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>APawnBase</label>
+        <link refid="class_a_pawn_base"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>APawn</label>
+      </node>
+      <node id="15">
+        <label>APawnTurret</label>
+        <link refid="class_a_pawn_turret"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>PlayerPawn</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>APawnTank</label>
+        <link refid="class_a_pawn_tank"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" line="13" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnTurret.h" bodystart="12" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" virt="non-virtual"><scope>APawnTurret</scope><name>APawnBase</name></member>
+      <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" virt="non-virtual"><scope>APawnTurret</scope><name>APawnBase</name></member>
+      <member refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" prot="protected" virt="virtual"><scope>APawnTurret</scope><name>BeginPlay</name></member>
+      <member refid="class_a_pawn_turret_1aef4ab1239e3cb05b281f76a6d91c1903" prot="protected" virt="virtual"><scope>APawnTurret</scope><name>BeginPlay</name></member>
+      <member refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>CheckFireCondition</name></member>
+      <member refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>CheckFireCondition</name></member>
+      <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" virt="non-virtual"><scope>APawnTurret</scope><name>Fire</name></member>
+      <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" virt="non-virtual"><scope>APawnTurret</scope><name>Fire</name></member>
+      <member refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>FireRange</name></member>
+      <member refid="class_a_pawn_turret_1a448016e6b3032fddf443128524b38a85" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>FireRate</name></member>
+      <member refid="class_a_pawn_turret_1a7a6149cecfdb46817439b6efd8e674dc" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>FireRateTimerHandle</name></member>
+      <member refid="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d" prot="public" virt="virtual"><scope>APawnTurret</scope><name>HandleDestruction</name></member>
+      <member refid="class_a_pawn_turret_1aada87f18d08f0cb4c79da4fcd5618d0c" prot="public" virt="virtual"><scope>APawnTurret</scope><name>HandleDestruction</name></member>
+      <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" virt="non-virtual"><scope>APawnTurret</scope><name>PawnDestroyed</name></member>
+      <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" virt="non-virtual"><scope>APawnTurret</scope><name>PawnDestroyed</name></member>
+      <member refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>PlayerPawn</name></member>
+      <member refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>ReturnDistanceToPlayer</name></member>
+      <member refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" prot="private" virt="non-virtual"><scope>APawnTurret</scope><name>ReturnDistanceToPlayer</name></member>
+      <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" virt="non-virtual"><scope>APawnTurret</scope><name>RotateTurret</name></member>
+      <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" virt="non-virtual"><scope>APawnTurret</scope><name>RotateTurret</name></member>
+      <member refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" prot="public" virt="virtual"><scope>APawnTurret</scope><name>Tick</name></member>
+      <member refid="class_a_pawn_turret_1a87a69081daadfe3d8dfff4eb781c91fc" prot="public" virt="virtual"><scope>APawnTurret</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

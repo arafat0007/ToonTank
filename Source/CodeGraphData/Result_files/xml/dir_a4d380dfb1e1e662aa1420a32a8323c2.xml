@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a4d380dfb1e1e662aa1420a32a8323c2" kind="dir">
+    <compoundname>d:/toontanks/Source/ToonTanks/PlayerControllers</compoundname>
+    <innerfile refid="_player_controller_base_8cpp">PlayerControllerBase.cpp</innerfile>
+    <innerfile refid="_player_controller_base_8h">PlayerControllerBase.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="d:/toontanks/Source/ToonTanks/PlayerControllers/"/>
+  </compounddef>
+</doxygen>

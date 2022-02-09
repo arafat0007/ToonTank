@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_a_pawn_base" kind="class"><name>APawnBase</name>
+    <member refid="class_a_pawn_base_1a22aadba6b80d73478e77cabc5a34a688" kind="variable"><name>CapsuleComponent</name></member>
+    <member refid="class_a_pawn_base_1aaf8e8a9570fd31ac0cf9e82817e03e11" kind="variable"><name>BaseMesh</name></member>
+    <member refid="class_a_pawn_base_1ae6bff82c0605f94aa964c51af097695c" kind="variable"><name>TurretMesh</name></member>
+    <member refid="class_a_pawn_base_1ad6c8b14429e85b407d3da2d96c54b100" kind="variable"><name>ProjectileSpawnPoint</name></member>
+    <member refid="class_a_pawn_base_1a09dde536b3e37518a21adad74760abc0" kind="variable"><name>HealthComponent</name></member>
+    <member refid="class_a_pawn_base_1a06770698dc7b0a4455db80ffab3c4851" kind="variable"><name>ProjectileClass</name></member>
+    <member refid="class_a_pawn_base_1a6a908f9040914038e50e78253387831a" kind="variable"><name>DeathParticle</name></member>
+    <member refid="class_a_pawn_base_1a979ab997f9625348cd74c7ca1aeeb2a1" kind="variable"><name>DeathSound</name></member>
+    <member refid="class_a_pawn_base_1af76535f904b8f2fba7aa7c07c57a5826" kind="variable"><name>DeathShake</name></member>
+    <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" kind="function"><name>APawnBase</name></member>
+    <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" kind="function"><name>PawnDestroyed</name></member>
+    <member refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" kind="function"><name>APawnBase</name></member>
+    <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" kind="function"><name>PawnDestroyed</name></member>
+    <member refid="class_a_pawn_base_1afaec61d9a9672359672227ccdeeb2af0" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" kind="function"><name>RotateTurret</name></member>
+    <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" kind="function"><name>Fire</name></member>
+    <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" kind="function"><name>RotateTurret</name></member>
+    <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" kind="function"><name>Fire</name></member>
+  </compound>
+  <compound refid="class_a_pawn_tank" kind="class"><name>APawnTank</name>
+    <member refid="class_a_pawn_tank_1a7e86c5f76adf42d608f601a03109a357" kind="variable"><name>SpringArm</name></member>
+    <member refid="class_a_pawn_tank_1a0e76c17b8e27c9b033b5b9dd56c76f27" kind="variable"><name>Camera</name></member>
+    <member refid="class_a_pawn_tank_1acd1c28ab5bca2110201743c497cc7fc5" kind="variable"><name>MoveDirection</name></member>
+    <member refid="class_a_pawn_tank_1a63c0d9c30f22cd83c3f5d381642c44a4" kind="variable"><name>RotationDirection</name></member>
+    <member refid="class_a_pawn_tank_1a5188b8f2101b7585fcd610fa53c50713" kind="variable"><name>MoveSpeed</name></member>
+    <member refid="class_a_pawn_tank_1ae689371566fbff53f9935fdafa27c5cc" kind="variable"><name>RotateSpeed</name></member>
+    <member refid="class_a_pawn_tank_1a18eac7270c7ddd412826df091d3288e3" kind="variable"><name>PlayerControllerRef</name></member>
+    <member refid="class_a_pawn_tank_1ab9e128753d263a09125e30275089178b" kind="variable"><name>bIsPlayerAlive</name></member>
+    <member refid="class_a_pawn_tank_1a959485b695219236ea3d4b01cf4bbeb1" kind="function"><name>CalculateMoveInput</name></member>
+    <member refid="class_a_pawn_tank_1adedd2e66b86eb245ac7f2828ad9c517f" kind="function"><name>CalculateRotateInput</name></member>
+    <member refid="class_a_pawn_tank_1aad21aa8bd574d45b09ef0f74d55247a2" kind="function"><name>Move</name></member>
+    <member refid="class_a_pawn_tank_1a36f555a47592c3f735d54d8e0b2543e9" kind="function"><name>Rotate</name></member>
+    <member refid="class_a_pawn_tank_1a959485b695219236ea3d4b01cf4bbeb1" kind="function"><name>CalculateMoveInput</name></member>
+    <member refid="class_a_pawn_tank_1adedd2e66b86eb245ac7f2828ad9c517f" kind="function"><name>CalculateRotateInput</name></member>
+    <member refid="class_a_pawn_tank_1aad21aa8bd574d45b09ef0f74d55247a2" kind="function"><name>Move</name></member>
+    <member refid="class_a_pawn_tank_1a36f555a47592c3f735d54d8e0b2543e9" kind="function"><name>Rotate</name></member>
+    <member refid="class_a_pawn_tank_1ad505fcabd2194b8d4916a71882dcc0a4" kind="function"><name>APawnTank</name></member>
+    <member refid="class_a_pawn_tank_1a26cb6c25f5cff55eee52dd094f37c21a" kind="function"><name>Tick</name></member>
+    <member refid="class_a_pawn_tank_1a435631e026a4b6d66f12cec40c02a54f" kind="function"><name>SetupPlayerInputComponent</name></member>
+    <member refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_tank_1aa5dfed747d5244a8bc5d7829ab7d07bc" kind="function"><name>GetIsPlayerAlive</name></member>
+    <member refid="class_a_pawn_tank_1ad505fcabd2194b8d4916a71882dcc0a4" kind="function"><name>APawnTank</name></member>
+    <member refid="class_a_pawn_tank_1aa253aea75c6342cedce05ea32f0ed931" kind="function"><name>Tick</name></member>
+    <member refid="class_a_pawn_tank_1a29a2bd76923301a7132fd5f26c49b33b" kind="function"><name>SetupPlayerInputComponent</name></member>
+    <member refid="class_a_pawn_tank_1aff3381b0bf2208963bd7d0eed0a7e85b" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_tank_1aa5dfed747d5244a8bc5d7829ab7d07bc" kind="function"><name>GetIsPlayerAlive</name></member>
+    <member refid="class_a_pawn_tank_1a8166c81e3f52b7227c59d25096aca6e1" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_pawn_tank_1aee177a6539b38aa471fa524a0c8f650c" kind="function"><name>BeginPlay</name></member>
+  </compound>
+  <compound refid="class_a_pawn_turret" kind="class"><name>APawnTurret</name>
+    <member refid="class_a_pawn_turret_1a448016e6b3032fddf443128524b38a85" kind="variable"><name>FireRate</name></member>
+    <member refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" kind="variable"><name>FireRange</name></member>
+    <member refid="class_a_pawn_turret_1a7a6149cecfdb46817439b6efd8e674dc" kind="variable"><name>FireRateTimerHandle</name></member>
+    <member refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kind="variable"><name>PlayerPawn</name></member>
+    <member refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" kind="function"><name>CheckFireCondition</name></member>
+    <member refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" kind="function"><name>ReturnDistanceToPlayer</name></member>
+    <member refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" kind="function"><name>CheckFireCondition</name></member>
+    <member refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" kind="function"><name>ReturnDistanceToPlayer</name></member>
+    <member refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" kind="function"><name>Tick</name></member>
+    <member refid="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_turret_1a87a69081daadfe3d8dfff4eb781c91fc" kind="function"><name>Tick</name></member>
+    <member refid="class_a_pawn_turret_1aada87f18d08f0cb4c79da4fcd5618d0c" kind="function"><name>HandleDestruction</name></member>
+    <member refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_pawn_turret_1aef4ab1239e3cb05b281f76a6d91c1903" kind="function"><name>BeginPlay</name></member>
+  </compound>
+  <compound refid="class_a_player_controller_base" kind="class"><name>APlayerControllerBase</name>
+    <member refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" kind="function"><name>SetPlayerEnabledState</name></member>
+  </compound>
+  <compound refid="class_a_projectile_base" kind="class"><name>AProjectileBase</name>
+    <member refid="class_a_projectile_base_1a47b60e4ca757f59df4135c2591179fad" kind="variable"><name>ProjectileMovement</name></member>
+    <member refid="class_a_projectile_base_1a78b8f01b4d9122d3da45b03ead445426" kind="variable"><name>ProjectileMesh</name></member>
+    <member refid="class_a_projectile_base_1a6ea6bc82513c04b368eab540e5543a85" kind="variable"><name>ParticleTrail</name></member>
+    <member refid="class_a_projectile_base_1ac849d60d7698562b2cad760dc1523b7c" kind="variable"><name>DamageType</name></member>
+    <member refid="class_a_projectile_base_1a94fd592ae7494c99ab429ee1feca4532" kind="variable"><name>MovementSpeed</name></member>
+    <member refid="class_a_projectile_base_1a96ac5fcd59a5a45fd2e2c5481714c333" kind="variable"><name>Damage</name></member>
+    <member refid="class_a_projectile_base_1a731a8596534cdb0f521473b0e43453c0" kind="variable"><name>HitParticle</name></member>
+    <member refid="class_a_projectile_base_1a46fe281bbde40228cd6e9b0ab6c20ba1" kind="variable"><name>HitShake</name></member>
+    <member refid="class_a_projectile_base_1a16e50c0fc6343d16b3559b4006945010" kind="variable"><name>HitSound</name></member>
+    <member refid="class_a_projectile_base_1a95e6589ef1d9a1b9af6405388e1ba45f" kind="variable"><name>LaunchSound</name></member>
+    <member refid="class_a_projectile_base_1a106e0517bbaad1af6f044dc90523f768" kind="variable"><name>OtherActor</name></member>
+    <member refid="class_a_projectile_base_1aac80fdca55990c28129477c99be6a695" kind="variable"><name>OtherComp</name></member>
+    <member refid="class_a_projectile_base_1a06a57c0a2d865ec16c3fc2bf802fb552" kind="variable"><name>NormalImpulse</name></member>
+    <member refid="class_a_projectile_base_1aa4e631c0f461291540c4a0bfe064445b" kind="variable"><name>Hit</name></member>
+    <member refid="class_a_projectile_base_1a646527b998a47630bede302fcb03c1cb" kind="function"><name>UFUNCTION</name></member>
+    <member refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" kind="function"><name>AProjectileBase</name></member>
+    <member refid="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" kind="function"><name>BeginPlay</name></member>
+  </compound>
+  <compound refid="class_a_tank_game_mode_base" kind="class"><name>ATankGameModeBase</name>
+    <member refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" kind="variable"><name>PlayerTank</name></member>
+    <member refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" kind="variable"><name>TargetTurrets</name></member>
+    <member refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" kind="variable"><name>PlayerControllerRef</name></member>
+    <member refid="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" kind="variable"><name>StartDelay</name></member>
+    <member refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" kind="function"><name>GetTargetTurretCount</name></member>
+    <member refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" kind="function"><name>HandleGameStart</name></member>
+    <member refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" kind="function"><name>HandleGameOver</name></member>
+    <member refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" kind="function"><name>ActorDied</name></member>
+    <member refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_tank_game_mode_base_1a23818c3baf0c2989546588f786fcff1c" kind="function"><name>GameStart</name></member>
+    <member refid="class_a_tank_game_mode_base_1a8eb8a9349dc2b2f86235d77f7090f227" kind="function"><name>GameOver</name></member>
+  </compound>
+  <compound refid="_projectile_base_8cpp" kind="file"><name>ProjectileBase.cpp</name>
+  </compound>
+  <compound refid="_projectile_base_8h" kind="file"><name>ProjectileBase.h</name>
+  </compound>
+  <compound refid="_health_component_8cpp" kind="file"><name>HealthComponent.cpp</name>
+  </compound>
+  <compound refid="_health_component_8h" kind="file"><name>HealthComponent.h</name>
+    <member refid="_health_component_8h_1a238f58553b7b0317c6c433a1761d1cae" kind="variable"><name>Health</name></member>
+    <member refid="_health_component_8h_1a4135338d58e8b6978e565ac19aec7aa1" kind="variable"><name>GameModeRef</name></member>
+    <member refid="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" kind="function"><name>UHealthComponent</name></member>
+    <member refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kind="function"><name>BeginPlay</name></member>
+    <member refid="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" kind="function"><name>TakeDamage</name></member>
+  </compound>
+  <compound refid="_tank_game_mode_base_8cpp" kind="file"><name>TankGameModeBase.cpp</name>
+  </compound>
+  <compound refid="_tank_game_mode_base_8h" kind="file"><name>TankGameModeBase.h</name>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" kind="file"><name>PawnBase.cpp</name>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" kind="file"><name>PawnBase.cpp</name>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" kind="file"><name>PawnBase.h</name>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" kind="file"><name>PawnBase.h</name>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" kind="file"><name>PawnTank.cpp</name>
+    <member refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp_1aec78e7a9e90a406a56f859ee456e8eae" kind="define"><name>OUT</name></member>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" kind="file"><name>PawnTank.cpp</name>
+    <member refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp_1aec78e7a9e90a406a56f859ee456e8eae" kind="define"><name>OUT</name></member>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" kind="file"><name>PawnTank.h</name>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" kind="file"><name>PawnTank.h</name>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" kind="file"><name>PawnTurret.cpp</name>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" kind="file"><name>PawnTurret.cpp</name>
+  </compound>
+  <compound refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" kind="file"><name>PawnTurret.h</name>
+  </compound>
+  <compound refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" kind="file"><name>PawnTurret.h</name>
+  </compound>
+  <compound refid="_player_controller_base_8cpp" kind="file"><name>PlayerControllerBase.cpp</name>
+  </compound>
+  <compound refid="_player_controller_base_8h" kind="file"><name>PlayerControllerBase.h</name>
+  </compound>
+  <compound refid="dir_bb9e782cf27604404f5afd6757a0c2ae" kind="dir"><name>d:/toontanks/Source/ToonTanks/Actors</name>
+  </compound>
+  <compound refid="dir_f3a1fc536a2cf06e45bb3f93778c5e4b" kind="dir"><name>d:/toontanks/Source/ToonTanks/Components</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_604b8536ae4240420803795590a868a7" kind="dir"><name>d:</name>
+  </compound>
+  <compound refid="dir_75d947172194fab1020c6d07c00d74c0" kind="dir"><name>d:/toontanks/Source/ToonTanks/GameModes</name>
+  </compound>
+  <compound refid="dir_7422af3efd3a3bdc0e39e2a56b210b9d" kind="dir"><name>D:/ToonTanks/Source/ToonTanks/Pawns</name>
+  </compound>
+  <compound refid="dir_8104b8d15d6ffb984a6fd5f12403af1a" kind="dir"><name>d:/toontanks/Source/ToonTanks/Pawns</name>
+  </compound>
+  <compound refid="dir_a4d380dfb1e1e662aa1420a32a8323c2" kind="dir"><name>d:/toontanks/Source/ToonTanks/PlayerControllers</name>
+  </compound>
+  <compound refid="dir_4a148f104aad5f2597a5c61c54f2abed" kind="dir"><name>D:/ToonTanks/Source</name>
+  </compound>
+  <compound refid="dir_9833192fb1ea62d06f119bc89c456724" kind="dir"><name>d:/toontanks/Source</name>
+  </compound>
+  <compound refid="dir_b4e0a74fe6fc8a3206543b4d94e82d1b" kind="dir"><name>D:/ToonTanks/Source/ToonTanks</name>
+  </compound>
+  <compound refid="dir_6aeb7bc1f0a25b994f6f338932436c36" kind="dir"><name>D:/ToonTanks</name>
+  </compound>
+  <compound refid="dir_93ead46d8ec91809daa6cb6f823aa2a7" kind="dir"><name>d:/toontanks/Source/ToonTanks</name>
+  </compound>
+  <compound refid="dir_66cb391f47b3175038c731d0a1867ce5" kind="dir"><name>d:/toontanks</name>
+  </compound>
+</doxygenindex>

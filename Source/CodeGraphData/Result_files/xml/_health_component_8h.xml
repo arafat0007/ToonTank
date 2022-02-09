@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_health_component_8h" kind="file">
+    <compoundname>HealthComponent.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">Components/ActorComponent.h</includes>
+    <includes local="yes">HealthComponent.generated.h</includes>
+    <includedby refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" local="yes">d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp</includedby>
+    <includedby refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" local="yes">D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.cpp</includedby>
+    <includedby refid="_health_component_8cpp" local="yes">d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp</includedby>
+    <incdepgraph>
+      <node id="29">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="30">
+        <label>Components/ActorComponent.h</label>
+      </node>
+      <node id="28">
+        <label>d:/toontanks/Source/ToonTanks/Components/HealthComponent.h</label>
+        <link refid="HealthComponent.h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>HealthComponent.generated.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="34">
+        <label>D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.cpp</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp"/>
+      </node>
+      <node id="32">
+        <label>d:/toontanks/Source/ToonTanks/Components/HealthComponent.h</label>
+        <link refid="HealthComponent.h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp</label>
+        <link refid="_health_component_8cpp"/>
+      </node>
+      <node id="33">
+        <label>d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp</label>
+        <link refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_health_component_8h_1a238f58553b7b0317c6c433a1761d1cae" prot="public" static="no" mutable="no">
+        <type>UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent)) class TOONTANKS_API <ref refid="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" kindref="member">UHealthComponent</ref> float</type>
+        <definition>UCLASS ( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) ) class TOONTANKS_API UHealthComponent float Health</definition>
+        <argsstring></argsstring>
+        <name>Health</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" line="19" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" compoundref="_health_component_8cpp" startline="30" endline="48">TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_health_component_8h_1a4135338d58e8b6978e565ac19aec7aa1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_tank_game_mode_base" kindref="compound">ATankGameModeBase</ref> *</type>
+        <definition>ATankGameModeBase* GameModeRef</definition>
+        <argsstring></argsstring>
+        <name>GameModeRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" line="21" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" compoundref="_health_component_8cpp" startline="30" endline="48">TakeDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UHealthComponent::UHealthComponent</definition>
+        <argsstring>()</argsstring>
+        <name>UHealthComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" line="25" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" line="29" column="1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" compoundref="_tank_game_mode_base_8cpp" startline="64" endline="69">ATankGameModeBase::BeginPlay</referencedby>
+        <referencedby refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="9" endline="17">APawnTurret::BeginPlay</referencedby>
+        <referencedby refid="class_a_pawn_tank_1a8166c81e3f52b7227c59d25096aca6e1" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" startline="43" endline="48">APawnTank::BeginPlay</referencedby>
+        <referencedby refid="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" compoundref="_projectile_base_8cpp" startline="50" endline="58">AProjectileBase::BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UHealthComponent::TakeDamage</definition>
+        <argsstring>(AActor *DamageActor, float Damage, const UDamageType *DamageType, AController *InvestigatedBy, AActor *DamageCauser)</argsstring>
+        <name>TakeDamage</name>
+        <param>
+          <type>AActor *</type>
+          <declname>DamageActor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Damage</declname>
+        </param>
+        <param>
+          <type>const UDamageType *</type>
+          <declname>DamageType</declname>
+        </param>
+        <param>
+          <type>AController *</type>
+          <declname>InvestigatedBy</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>DamageCauser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h" line="32" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp" bodystart="30" bodyend="48"/>
+        <references refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ATankGameModeBase::ActorDied</references>
+        <references refid="_health_component_8h_1a4135338d58e8b6978e565ac19aec7aa1" compoundref="_health_component_8h" startline="21">GameModeRef</references>
+        <references refid="_health_component_8h_1a238f58553b7b0317c6c433a1761d1cae" compoundref="_health_component_8h" startline="19">Health</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Components/ActorComponent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HealthComponent.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_tank_game_mode_base" kindref="compound">ATankGameModeBase</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">UCLASS(<sp/>ClassGroup=(Custom),<sp/>meta=(BlueprintSpawnableComponent)<sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">class<sp/>TOONTANKS_API<sp/><ref refid="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" kindref="member">UHealthComponent</ref><sp/>:<sp/>public<sp/>UActorComponent</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DefaultHealth<sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="19" refid="_health_component_8h_1a238f58553b7b0317c6c433a1761d1cae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_health_component_8h_1a238f58553b7b0317c6c433a1761d1cae" kindref="member">Health</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="_health_component_8h_1a4135338d58e8b6978e565ac19aec7aa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base" kindref="compound">ATankGameModeBase</ref>*<sp/><ref refid="_health_component_8h_1a4135338d58e8b6978e565ac19aec7aa1" kindref="member">GameModeRef</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">public:<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sets<sp/>default<sp/>values<sp/>for<sp/>this<sp/>component&apos;s<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" kindref="member">UHealthComponent</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">protected:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Called<sp/>when<sp/>the<sp/>game<sp/>starts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kindref="member">BeginPlay</ref>()<sp/>override;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" kindref="member">TakeDamage</ref>(AActor*<sp/>DamageActor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Damage,<sp/>const<sp/>UDamageType*<sp/>DamageType,<sp/>AController*<sp/>InvestigatedBy,<sp/>AActor*<sp/>DamageCauser);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="d:/toontanks/Source/ToonTanks/Components/HealthComponent.h"/>
+  </compounddef>
+</doxygen>

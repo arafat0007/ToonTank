@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_projectile_base" kind="class" prot="public">
+    <compoundname>AProjectileBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_projectile_base_8h" local="no">ProjectileBase.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_projectile_base_1a47b60e4ca757f59df4135c2591179fad" prot="private" static="no" mutable="no">
+        <type>UProjectileMovementComponent *</type>
+        <definition>UProjectileMovementComponent* AProjectileBase::ProjectileMovement</definition>
+        <argsstring></argsstring>
+        <name>ProjectileMovement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="21" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" compoundref="_projectile_base_8cpp" startline="32" endline="47">AProjectileBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a78b8f01b4d9122d3da45b03ead445426" prot="private" static="no" mutable="no">
+        <type>UStaticMeshComponent *</type>
+        <definition>UStaticMeshComponent* AProjectileBase::ProjectileMesh</definition>
+        <argsstring></argsstring>
+        <name>ProjectileMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="24" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" compoundref="_projectile_base_8cpp" startline="32" endline="47">AProjectileBase</referencedby>
+        <referencedby refid="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" compoundref="_projectile_base_8cpp" startline="50" endline="58">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a6ea6bc82513c04b368eab540e5543a85" prot="private" static="no" mutable="no">
+        <type>UParticleSystemComponent *</type>
+        <definition>UParticleSystemComponent* AProjectileBase::ParticleTrail</definition>
+        <argsstring></argsstring>
+        <name>ParticleTrail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="27" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" compoundref="_projectile_base_8cpp" startline="32" endline="47">AProjectileBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1ac849d60d7698562b2cad760dc1523b7c" prot="private" static="no" mutable="no">
+        <type>TSubclassOf&lt; UDamageType &gt;</type>
+        <definition>TSubclassOf&lt;UDamageType&gt; AProjectileBase::DamageType</definition>
+        <argsstring></argsstring>
+        <name>DamageType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="30" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a94fd592ae7494c99ab429ee1feca4532" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AProjectileBase::MovementSpeed</definition>
+        <argsstring></argsstring>
+        <name>MovementSpeed</name>
+        <initializer>= 1300.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="33" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" compoundref="_projectile_base_8cpp" startline="32" endline="47">AProjectileBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a96ac5fcd59a5a45fd2e2c5481714c333" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AProjectileBase::Damage</definition>
+        <argsstring></argsstring>
+        <name>Damage</name>
+        <initializer>= 50.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="36" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a731a8596534cdb0f521473b0e43453c0" prot="private" static="no" mutable="no">
+        <type>UParticleSystem *</type>
+        <definition>UParticleSystem* AProjectileBase::HitParticle</definition>
+        <argsstring></argsstring>
+        <name>HitParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="39" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a46fe281bbde40228cd6e9b0ab6c20ba1" prot="private" static="no" mutable="no">
+        <type>TSubclassOf&lt; UCameraShake &gt;</type>
+        <definition>TSubclassOf&lt;UCameraShake&gt; AProjectileBase::HitShake</definition>
+        <argsstring></argsstring>
+        <name>HitShake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="42" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a16e50c0fc6343d16b3559b4006945010" prot="private" static="no" mutable="no">
+        <type>USoundBase *</type>
+        <definition>USoundBase* AProjectileBase::HitSound</definition>
+        <argsstring></argsstring>
+        <name>HitSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="45" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a95e6589ef1d9a1b9af6405388e1ba45f" prot="private" static="no" mutable="no">
+        <type>USoundBase *</type>
+        <definition>USoundBase* AProjectileBase::LaunchSound</definition>
+        <argsstring></argsstring>
+        <name>LaunchSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="47" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" compoundref="_projectile_base_8cpp" startline="50" endline="58">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a106e0517bbaad1af6f044dc90523f768" prot="private" static="no" mutable="no">
+        <type>AActor *</type>
+        <definition>AActor* AProjectileBase::OtherActor</definition>
+        <argsstring></argsstring>
+        <name>OtherActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="50" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1aac80fdca55990c28129477c99be6a695" prot="private" static="no" mutable="no">
+        <type>AActor UPrimitiveComponent *</type>
+        <definition>AActor UPrimitiveComponent* AProjectileBase::OtherComp</definition>
+        <argsstring></argsstring>
+        <name>OtherComp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="50" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1a06a57c0a2d865ec16c3fc2bf802fb552" prot="private" static="no" mutable="no">
+        <type>AActor UPrimitiveComponent FVector</type>
+        <definition>AActor UPrimitiveComponent FVector AProjectileBase::NormalImpulse</definition>
+        <argsstring></argsstring>
+        <name>NormalImpulse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="50" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_projectile_base_1aa4e631c0f461291540c4a0bfe064445b" prot="private" static="no" mutable="no">
+        <type>AActor UPrimitiveComponent FVector const FHitResult &amp;</type>
+        <definition>AActor UPrimitiveComponent FVector const FHitResult&amp; AProjectileBase::Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="50" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_projectile_base_1a646527b998a47630bede302fcb03c1cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AProjectileBase::UFUNCTION</definition>
+        <argsstring>() void OnHit(UPrimitiveComponent *HitComponent</argsstring>
+        <name>UFUNCTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AProjectileBase::AProjectileBase</definition>
+        <argsstring>()</argsstring>
+        <name>AProjectileBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="54" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.cpp" bodystart="32" bodyend="47"/>
+        <references refid="class_a_projectile_base_1a94fd592ae7494c99ab429ee1feca4532" compoundref="_projectile_base_8h" startline="33">MovementSpeed</references>
+        <references refid="class_a_projectile_base_1a6ea6bc82513c04b368eab540e5543a85" compoundref="_projectile_base_8h" startline="27">ParticleTrail</references>
+        <references refid="class_a_projectile_base_1a78b8f01b4d9122d3da45b03ead445426" compoundref="_projectile_base_8h" startline="24">ProjectileMesh</references>
+        <references refid="class_a_projectile_base_1a47b60e4ca757f59df4135c2591179fad" compoundref="_projectile_base_8h" startline="21">ProjectileMovement</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AProjectileBase::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="58" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.cpp" bodystart="50" bodyend="58"/>
+        <references refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1">BeginPlay</references>
+        <references refid="class_a_projectile_base_1a95e6589ef1d9a1b9af6405388e1ba45f" compoundref="_projectile_base_8h" startline="47">LaunchSound</references>
+        <references refid="class_a_projectile_base_1a78b8f01b4d9122d3da45b03ead445426" compoundref="_projectile_base_8h" startline="24">ProjectileMesh</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>AActor</label>
+      </node>
+      <node id="23">
+        <label>AProjectileBase</label>
+        <link refid="class_a_projectile_base"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>AActor</label>
+      </node>
+      <node id="25">
+        <label>AProjectileBase</label>
+        <link refid="class_a_projectile_base"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" line="16" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Actors/ProjectileBase.h" bodystart="15" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_a_projectile_base_1a3ed718af7af9cc16a898547c3b89e34b" prot="public" virt="non-virtual"><scope>AProjectileBase</scope><name>AProjectileBase</name></member>
+      <member refid="class_a_projectile_base_1a025778aacf1f8b69de87cbf55e89d35d" prot="protected" virt="virtual"><scope>AProjectileBase</scope><name>BeginPlay</name></member>
+      <member refid="class_a_projectile_base_1a96ac5fcd59a5a45fd2e2c5481714c333" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>Damage</name></member>
+      <member refid="class_a_projectile_base_1ac849d60d7698562b2cad760dc1523b7c" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>DamageType</name></member>
+      <member refid="class_a_projectile_base_1aa4e631c0f461291540c4a0bfe064445b" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>Hit</name></member>
+      <member refid="class_a_projectile_base_1a731a8596534cdb0f521473b0e43453c0" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>HitParticle</name></member>
+      <member refid="class_a_projectile_base_1a46fe281bbde40228cd6e9b0ab6c20ba1" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>HitShake</name></member>
+      <member refid="class_a_projectile_base_1a16e50c0fc6343d16b3559b4006945010" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>HitSound</name></member>
+      <member refid="class_a_projectile_base_1a95e6589ef1d9a1b9af6405388e1ba45f" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>LaunchSound</name></member>
+      <member refid="class_a_projectile_base_1a94fd592ae7494c99ab429ee1feca4532" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>MovementSpeed</name></member>
+      <member refid="class_a_projectile_base_1a06a57c0a2d865ec16c3fc2bf802fb552" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>NormalImpulse</name></member>
+      <member refid="class_a_projectile_base_1a106e0517bbaad1af6f044dc90523f768" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>OtherActor</name></member>
+      <member refid="class_a_projectile_base_1aac80fdca55990c28129477c99be6a695" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>OtherComp</name></member>
+      <member refid="class_a_projectile_base_1a6ea6bc82513c04b368eab540e5543a85" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>ParticleTrail</name></member>
+      <member refid="class_a_projectile_base_1a78b8f01b4d9122d3da45b03ead445426" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>ProjectileMesh</name></member>
+      <member refid="class_a_projectile_base_1a47b60e4ca757f59df4135c2591179fad" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>ProjectileMovement</name></member>
+      <member refid="class_a_projectile_base_1a646527b998a47630bede302fcb03c1cb" prot="private" virt="non-virtual"><scope>AProjectileBase</scope><name>UFUNCTION</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_player_controller_base" kind="class" prot="public">
+    <compoundname>APlayerControllerBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">APlayerController</basecompoundref>
+    <includes refid="_player_controller_base_8h" local="no">PlayerControllerBase.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APlayerControllerBase::SetPlayerEnabledState</definition>
+        <argsstring>(bool SetPlayerEnabled)</argsstring>
+        <name>SetPlayerEnabledState</name>
+        <param>
+          <type>bool</type>
+          <declname>SetPlayerEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h" line="18" column="1" bodyfile="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.cpp" bodystart="6" bodyend="15"/>
+        <referencedby refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ATankGameModeBase::ActorDied</referencedby>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">ATankGameModeBase::HandleGameStart</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>APlayerControllerBase</label>
+        <link refid="class_a_player_controller_base"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>APlayerController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>APlayerControllerBase</label>
+        <link refid="class_a_player_controller_base"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>APlayerController</label>
+      </node>
+    </collaborationgraph>
+    <location file="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h" line="14" column="1" bodyfile="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" prot="public" virt="non-virtual"><scope>APlayerControllerBase</scope><name>SetPlayerEnabledState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

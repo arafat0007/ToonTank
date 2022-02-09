@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" kind="file">
+    <compoundname>PawnTank.cpp</compoundname>
+    <includes refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" local="yes">PawnTank.h</includes>
+    <includes local="yes">GameFramework/SpringArmComponent.h</includes>
+    <includes local="yes">Camera/CameraComponent.h</includes>
+    <incdepgraph>
+      <node id="119">
+        <label>PawnBase.generated.h</label>
+      </node>
+      <node id="116">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="121">
+        <label>GameFramework/SpringArmComponent.h</label>
+      </node>
+      <node id="117">
+        <label>PawnBase.h</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>PawnTank.generated.h</label>
+      </node>
+      <node id="122">
+        <label>Camera/CameraComponent.h</label>
+      </node>
+      <node id="118">
+        <label>GameFramework/Pawn.h</label>
+      </node>
+      <node id="115">
+        <label>PawnTank.h</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>D:/ToonTanks/Source/ToonTanks/Pawns/PawnTank.cpp</label>
+        <link refid=":/ToonTanks/Source/ToonTanks/Pawns/PawnTank.cpp"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp_1aec78e7a9e90a406a56f859ee456e8eae" prot="public" static="no">
+        <name>OUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTank.cpp" line="9" column="9" bodyfile="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTank.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" kindref="compound">PawnTank.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameFramework/SpringArmComponent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camera/CameraComponent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp_1aec78e7a9e90a406a56f859ee456e8eae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a959485b695219236ea3d4b01cf4bbeb1" kindref="member">APawnTank::CalculateMoveInput</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Value)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1acd1c28ab5bca2110201743c497cc7fc5" kindref="member">MoveDirection</ref><sp/>=<sp/>FVector(Value<sp/>*<sp/><ref refid="class_a_pawn_tank_1a5188b8f2101b7585fcd610fa53c50713" kindref="member">MoveSpeed</ref><sp/>*<sp/>GetWorld()-&gt;DeltaTimeSeconds,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1adedd2e66b86eb245ac7f2828ad9c517f" kindref="member">APawnTank::CalculateRotateInput</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Value)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>RotateAmount<sp/>=<sp/>Value<sp/>*<sp/><ref refid="class_a_pawn_tank_1ae689371566fbff53f9935fdafa27c5cc" kindref="member">RotateSpeed</ref><sp/>*<sp/>GetWorld()-&gt;DeltaTimeSeconds;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>FRotator<sp/>Rotation<sp/>=<sp/>FRotator(0,<sp/>RotateAmount,<sp/>0);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a63c0d9c30f22cd83c3f5d381642c44a4" kindref="member">RotationDirection</ref><sp/>=<sp/>FQuat(Rotation);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1aad21aa8bd574d45b09ef0f74d55247a2" kindref="member">APawnTank::Move</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>AddActorLocalOffset(<ref refid="class_a_pawn_tank_1acd1c28ab5bca2110201743c497cc7fc5" kindref="member">MoveDirection</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a36f555a47592c3f735d54d8e0b2543e9" kindref="member">APawnTank::Rotate</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>AddActorLocalRotation(<ref refid="class_a_pawn_tank_1a63c0d9c30f22cd83c3f5d381642c44a4" kindref="member">RotationDirection</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="class_a_pawn_tank_1ad505fcabd2194b8d4916a71882dcc0a4" kindref="member">APawnTank::APawnTank</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a7e86c5f76adf42d608f601a03109a357" kindref="member">SpringArm</ref><sp/>=<sp/>CreateDefaultSubobject&lt;USpringArmComponent&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;Spring<sp/>Arm&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a7e86c5f76adf42d608f601a03109a357" kindref="member">SpringArm</ref>-&gt;SetupAttachment(RootComponent);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a0e76c17b8e27c9b033b5b9dd56c76f27" kindref="member">Camera</ref><sp/>=<sp/>CreateDefaultSubobject&lt;UCameraComponent&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;Camera&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a0e76c17b8e27c9b033b5b9dd56c76f27" kindref="member">Camera</ref>-&gt;SetupAttachment(<ref refid="class_a_pawn_tank_1a7e86c5f76adf42d608f601a03109a357" kindref="member">SpringArm</ref>);<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>when<sp/>the<sp/>game<sp/>starts<sp/>or<sp/>when<sp/>spawned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a8166c81e3f52b7227c59d25096aca6e1" kindref="member">APawnTank::BeginPlay</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kindref="member">Super::BeginPlay</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a18eac7270c7ddd412826df091d3288e3" kindref="member">PlayerControllerRef</ref><sp/>=<sp/>Cast&lt;APlayerController&gt;(GetController());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880" kindref="member">APawnTank::HandleDestruction</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>base<sp/>pawn<sp/>class<sp/>HandleDestruction<sp/>to<sp/>play<sp/>effects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::HandleDestruction();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1ab9e128753d263a09125e30275089178b" kindref="member">bIsPlayerAlive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>SetActorHiddenInGame(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SetActorTickEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1aa5dfed747d5244a8bc5d7829ab7d07bc" kindref="member">APawnTank::GetIsPlayerAlive</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1ab9e128753d263a09125e30275089178b" kindref="member">bIsPlayerAlive</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>every<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a26cb6c25f5cff55eee52dd094f37c21a" kindref="member">APawnTank::Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::Tick(DeltaTime);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a36f555a47592c3f735d54d8e0b2543e9" kindref="member">Rotate</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1aad21aa8bd574d45b09ef0f74d55247a2" kindref="member">Move</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_pawn_tank_1a18eac7270c7ddd412826df091d3288e3" kindref="member">PlayerControllerRef</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FHitResult<sp/>TraceHitResult;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank_1a18eac7270c7ddd412826df091d3288e3" kindref="member">PlayerControllerRef</ref>-&gt;GetHitResultUnderCursor(ECC_Visibility,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/><ref refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp_1aec78e7a9e90a406a56f859ee456e8eae" kindref="member">OUT</ref><sp/>TraceHitResult);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FVector<sp/>HitLocation<sp/>=<sp/>TraceHitResult.ImpactPoint;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" kindref="member">RotateTurret</ref>(HitLocation);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>to<sp/>bind<sp/>functionality<sp/>to<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_tank_1a435631e026a4b6d66f12cec40c02a54f" kindref="member">APawnTank::SetupPlayerInputComponent</ref>(UInputComponent*<sp/>PlayerInputComponent)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::SetupPlayerInputComponent(PlayerInputComponent);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>PlayerInputComponent-&gt;BindAxis(</highlight><highlight class="stringliteral">&quot;MoveForward&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_a_pawn_tank_1a959485b695219236ea3d4b01cf4bbeb1" kindref="member">APawnTank::CalculateMoveInput</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>PlayerInputComponent-&gt;BindAxis(</highlight><highlight class="stringliteral">&quot;Turn&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_a_pawn_tank_1adedd2e66b86eb245ac7f2828ad9c517f" kindref="member">APawnTank::CalculateRotateInput</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>PlayerInputComponent-&gt;BindAction(</highlight><highlight class="stringliteral">&quot;Fire&quot;</highlight><highlight class="normal">,<sp/>IE_Pressed,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" kindref="member">APawnTank::Fire</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTank.cpp"/>
+  </compounddef>
+</doxygen>

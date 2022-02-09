@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_player_controller_base_8cpp" kind="file">
+    <compoundname>PlayerControllerBase.cpp</compoundname>
+    <includes refid="_player_controller_base_8h" local="yes">PlayerControllerBase.h</includes>
+    <incdepgraph>
+      <node id="184">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="186">
+        <label>PlayerControllerBase.generated.h</label>
+      </node>
+      <node id="182">
+        <label>d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.cpp</label>
+        <link refid="PlayerControllerBase.cpp"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>GameFramework/PlayerController.h</label>
+      </node>
+      <node id="183">
+        <label>PlayerControllerBase.h</label>
+        <link refid="_player_controller_base_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_controller_base_8h" kindref="compound">PlayerControllerBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" kindref="member">APlayerControllerBase::SetPlayerEnabledState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPlayerEnabled)<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SetPlayerEnabled)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetPawn()-&gt;EnableInput(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetPawn()-&gt;DisableInput(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>bShowMouseCursor<sp/>=<sp/>SetPlayerEnabled;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.cpp"/>
+  </compounddef>
+</doxygen>

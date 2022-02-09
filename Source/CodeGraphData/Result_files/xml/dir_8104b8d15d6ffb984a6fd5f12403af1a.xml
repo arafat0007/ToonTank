@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_8104b8d15d6ffb984a6fd5f12403af1a" kind="dir">
+    <compoundname>d:/toontanks/Source/ToonTanks/Pawns</compoundname>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp">PawnBase.cpp</innerfile>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h">PawnBase.h</innerfile>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp">PawnTank.cpp</innerfile>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h">PawnTank.h</innerfile>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp">PawnTurret.cpp</innerfile>
+    <innerfile refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h">PawnTurret.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="d:/toontanks/Source/ToonTanks/Pawns/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_tank_game_mode_base_8cpp" kind="file">
+    <compoundname>TankGameModeBase.cpp</compoundname>
+    <includes refid="_tank_game_mode_base_8h" local="yes">TankGameModeBase.h</includes>
+    <includes local="yes">ToonTanks/Pawns/PawnTank.h</includes>
+    <includes local="yes">ToonTanks/Pawns/PawnTurret.h</includes>
+    <includes local="yes">Kismet/GamePlayStatics.h</includes>
+    <includes refid="_player_controller_base_8h" local="yes">ToonTanks/PlayerControllers/PlayerControllerBase.h</includes>
+    <incdepgraph>
+      <node id="41">
+        <label>ToonTanks/Pawns/PawnTank.h</label>
+      </node>
+      <node id="39">
+        <label>GameFramework/GameModeBase.h</label>
+      </node>
+      <node id="38">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="43">
+        <label>Kismet/GamePlayStatics.h</label>
+      </node>
+      <node id="42">
+        <label>ToonTanks/Pawns/PawnTurret.h</label>
+      </node>
+      <node id="46">
+        <label>PlayerControllerBase.generated.h</label>
+      </node>
+      <node id="36">
+        <label>d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp</label>
+        <link refid="TankGameModeBase.cpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>TankGameModeBase.generated.h</label>
+      </node>
+      <node id="45">
+        <label>GameFramework/PlayerController.h</label>
+      </node>
+      <node id="44">
+        <label>ToonTanks/PlayerControllers/PlayerControllerBase.h</label>
+        <link refid="_player_controller_base_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>TankGameModeBase.h</label>
+        <link refid="_tank_game_mode_base_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tank_game_mode_base_8h" kindref="compound">TankGameModeBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ToonTanks/Pawns/PawnTank.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ToonTanks/Pawns/PawnTurret.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Kismet/GamePlayStatics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_controller_base_8h" kindref="compound">ToonTanks/PlayerControllers/PlayerControllerBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" refkind="member"><highlight class="normal">int32<sp/><ref refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" kindref="member">ATankGameModeBase::GetTargetTurretCount</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;AActor*&gt;<sp/>TurretActors;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>UGameplayStatics::GetAllActorsOfClass(GetWorld(),<sp/>APawnTurret::StaticClass(),<sp/>TurretActors);<sp/></highlight><highlight class="comment">//Static<sp/>class<sp/>means<sp/>we<sp/>are<sp/>not<sp/>asking<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Object,<sp/>rather<sp/>it<sp/>will<sp/>give<sp/>us<sp/>UClass<sp/>of<sp/>APawnTurret</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TurretActors.Num();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" kindref="member">ATankGameModeBase::HandleGameStart</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" kindref="member">TargetTurrets</ref><sp/>=<sp/><ref refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" kindref="member">GetTargetTurretCount</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" kindref="member">PlayerTank</ref><sp/>=<sp/>Cast&lt;APawnTank&gt;(UGameplayStatics::GetPlayerPawn(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" kindref="member">PlayerControllerRef</ref><sp/>=<sp/>Cast&lt;APlayerControllerBase&gt;(UGameplayStatics::GetPlayerController(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a23818c3baf0c2989546588f786fcff1c" kindref="member">GameStart</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PlayerControllerRef)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PlayerControllerRef-&gt;SetPlayerEnabledState(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTimerHandle<sp/>PlayerEnableHandle;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTimerDelegate<sp/>PlayerEnableDelegate<sp/>=<sp/>FTimerDelegate::CreateUObject(PlayerControllerRef,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" kindref="member">APlayerControllerBase::SetPlayerEnabledState</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight><highlight class="comment">//setting<sp/>other<sp/>class&apos;s<sp/>function<sp/>to<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetWorld()-&gt;GetTimerManager().SetTimer(PlayerEnableHandle,<sp/>PlayerEnableDelegate,<sp/><ref refid="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" kindref="member">StartDelay</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" kindref="member">ATankGameModeBase::HandleGameOver</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PlayerWon)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a8eb8a9349dc2b2f86235d77f7090f227" kindref="member">GameOver</ref>(PlayerWon);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" kindref="member">ATankGameModeBase::ActorDied</ref>(AActor*<sp/>DeadActor)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DeadActor<sp/>==<sp/><ref refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" kindref="member">PlayerTank</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" kindref="member">PlayerTank</ref>-&gt;<ref refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880" kindref="member">HandleDestruction</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" kindref="member">HandleGameOver</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" kindref="member">PlayerControllerRef</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" kindref="member">PlayerControllerRef</ref>-&gt;<ref refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" kindref="member">SetPlayerEnabledState</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_a_pawn_turret" kindref="compound">APawnTurret</ref>*<sp/>DestroyedTurret<sp/>=<sp/>Cast&lt;APawnTurret&gt;(DeadActor)){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DestroyedTurret-&gt;HandleDestruction();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" kindref="member">TargetTurrets</ref><sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" kindref="member">TargetTurrets</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" kindref="member">HandleGameOver</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>when<sp/>the<sp/>game<sp/>starts<sp/>or<sp/>when<sp/>spawned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" kindref="member">ATankGameModeBase::BeginPlay</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kindref="member">Super::BeginPlay</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" kindref="member">HandleGameStart</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp"/>
+  </compounddef>
+</doxygen>

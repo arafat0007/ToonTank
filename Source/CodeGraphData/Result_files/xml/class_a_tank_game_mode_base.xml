@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_tank_game_mode_base" kind="class" prot="public">
+    <compoundname>ATankGameModeBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AGameModeBase</basecompoundref>
+    <includes refid="_tank_game_mode_base_8h" local="no">TankGameModeBase.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_pawn_tank" kindref="compound">APawnTank</ref> *</type>
+        <definition>APawnTank* ATankGameModeBase::PlayerTank</definition>
+        <argsstring></argsstring>
+        <name>PlayerTank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="19" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ActorDied</referencedby>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" prot="private" static="no" mutable="no">
+        <type>int32</type>
+        <definition>int32 ATankGameModeBase::TargetTurrets</definition>
+        <argsstring></argsstring>
+        <name>TargetTurrets</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="20" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ActorDied</referencedby>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_player_controller_base" kindref="compound">APlayerControllerBase</ref> *</type>
+        <definition>APlayerControllerBase* ATankGameModeBase::PlayerControllerRef</definition>
+        <argsstring></argsstring>
+        <name>PlayerControllerRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="21" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ActorDied</referencedby>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" prot="protected" static="no" mutable="no">
+        <type>int32</type>
+        <definition>int32 ATankGameModeBase::StartDelay</definition>
+        <argsstring></argsstring>
+        <name>StartDelay</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="32" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 ATankGameModeBase::GetTargetTurretCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetTargetTurretCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="23" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp" bodystart="10" bodyend="17"/>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::HandleGameStart</definition>
+        <argsstring>()</argsstring>
+        <name>HandleGameStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="24" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp" bodystart="19" bodyend="36"/>
+        <references refid="class_a_tank_game_mode_base_1a23818c3baf0c2989546588f786fcff1c">GameStart</references>
+        <references refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" compoundref="_tank_game_mode_base_8cpp" startline="10" endline="17">GetTargetTurretCount</references>
+        <references refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" compoundref="_tank_game_mode_base_8h" startline="21">PlayerControllerRef</references>
+        <references refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" compoundref="_tank_game_mode_base_8h" startline="19">PlayerTank</references>
+        <references refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" compoundref="_player_controller_base_8cpp" startline="6" endline="15">APlayerControllerBase::SetPlayerEnabledState</references>
+        <references refid="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" compoundref="_tank_game_mode_base_8h" startline="32">StartDelay</references>
+        <references refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" compoundref="_tank_game_mode_base_8h" startline="20">TargetTurrets</references>
+        <referencedby refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" compoundref="_tank_game_mode_base_8cpp" startline="64" endline="69">BeginPlay</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::HandleGameOver</definition>
+        <argsstring>(bool PlayerWon)</argsstring>
+        <name>HandleGameOver</name>
+        <param>
+          <type>bool</type>
+          <declname>PlayerWon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="25" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp" bodystart="38" bodyend="41"/>
+        <references refid="class_a_tank_game_mode_base_1a8eb8a9349dc2b2f86235d77f7090f227">GameOver</references>
+        <referencedby refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" compoundref="_tank_game_mode_base_8cpp" startline="43" endline="61">ActorDied</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::ActorDied</definition>
+        <argsstring>(AActor *DeadActor)</argsstring>
+        <name>ActorDied</name>
+        <param>
+          <type>AActor *</type>
+          <declname>DeadActor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="28" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp" bodystart="43" bodyend="61"/>
+        <references refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" startline="50" endline="59">APawnTank::HandleDestruction</references>
+        <references refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" compoundref="_tank_game_mode_base_8cpp" startline="38" endline="41">HandleGameOver</references>
+        <references refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" compoundref="_tank_game_mode_base_8h" startline="21">PlayerControllerRef</references>
+        <references refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" compoundref="_tank_game_mode_base_8h" startline="19">PlayerTank</references>
+        <references refid="class_a_player_controller_base_1acbe81bfe4a602259f28e48c0d7994bfc" compoundref="_player_controller_base_8cpp" startline="6" endline="15">APlayerControllerBase::SetPlayerEnabledState</references>
+        <references refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" compoundref="_tank_game_mode_base_8h" startline="20">TargetTurrets</references>
+        <referencedby refid="_health_component_8h_1aefa4ce220048c57e7d31a03a29213723" compoundref="_health_component_8cpp" startline="30" endline="48">TakeDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="34" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp" bodystart="64" bodyend="69"/>
+        <references refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1">BeginPlay</references>
+        <references refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</references>
+      </memberdef>
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1a23818c3baf0c2989546588f786fcff1c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::GameStart</definition>
+        <argsstring>()</argsstring>
+        <name>GameStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="37" column="1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" compoundref="_tank_game_mode_base_8cpp" startline="19" endline="36">HandleGameStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_tank_game_mode_base_1a8eb8a9349dc2b2f86235d77f7090f227" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATankGameModeBase::GameOver</definition>
+        <argsstring>(bool PlayerWon)</argsstring>
+        <name>GameOver</name>
+        <param>
+          <type>bool</type>
+          <declname>PlayerWon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="40" column="1"/>
+        <referencedby refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" compoundref="_tank_game_mode_base_8cpp" startline="38" endline="41">HandleGameOver</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>ATankGameModeBase</label>
+        <link refid="class_a_tank_game_mode_base"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>AGameModeBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>APlayerControllerBase</label>
+        <link refid="class_a_player_controller_base"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>APawnBase</label>
+        <link refid="class_a_pawn_base"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>APawn</label>
+      </node>
+      <node id="29">
+        <label>ATankGameModeBase</label>
+        <link refid="class_a_tank_game_mode_base"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>PlayerTank</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>PlayerControllerRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>APlayerController</label>
+      </node>
+      <node id="30">
+        <label>AGameModeBase</label>
+      </node>
+      <node id="31">
+        <label>APawnTank</label>
+        <link refid="class_a_pawn_tank"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" line="15" column="1" bodyfile="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h" bodystart="14" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_a_tank_game_mode_base_1ac5ba05c077b749df21d6f0b55d7d71a9" prot="public" virt="non-virtual"><scope>ATankGameModeBase</scope><name>ActorDied</name></member>
+      <member refid="class_a_tank_game_mode_base_1a26b0f67cbd3c9d8f2bd38698271ccb2a" prot="protected" virt="virtual"><scope>ATankGameModeBase</scope><name>BeginPlay</name></member>
+      <member refid="class_a_tank_game_mode_base_1a8eb8a9349dc2b2f86235d77f7090f227" prot="protected" virt="non-virtual"><scope>ATankGameModeBase</scope><name>GameOver</name></member>
+      <member refid="class_a_tank_game_mode_base_1a23818c3baf0c2989546588f786fcff1c" prot="protected" virt="non-virtual"><scope>ATankGameModeBase</scope><name>GameStart</name></member>
+      <member refid="class_a_tank_game_mode_base_1a29b591732858ef4c2f8fe1985f5a5c2f" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>GetTargetTurretCount</name></member>
+      <member refid="class_a_tank_game_mode_base_1acfa8cd352823306ac74711eca974a536" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>HandleGameOver</name></member>
+      <member refid="class_a_tank_game_mode_base_1a110d07c5502f28b3563009c41d049dc0" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>HandleGameStart</name></member>
+      <member refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>PlayerControllerRef</name></member>
+      <member refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>PlayerTank</name></member>
+      <member refid="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" prot="protected" virt="non-virtual"><scope>ATankGameModeBase</scope><name>StartDelay</name></member>
+      <member refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" prot="private" virt="non-virtual"><scope>ATankGameModeBase</scope><name>TargetTurrets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

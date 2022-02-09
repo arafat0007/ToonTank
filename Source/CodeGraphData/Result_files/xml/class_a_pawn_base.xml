@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_pawn_base" kind="class" prot="public">
+    <compoundname>APawnBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">APawn</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">APawn</basecompoundref>
+    <derivedcompoundref refid="class_a_pawn_tank" prot="public" virt="non-virtual">APawnTank</derivedcompoundref>
+    <derivedcompoundref refid="class_a_pawn_tank" prot="public" virt="non-virtual">APawnTank</derivedcompoundref>
+    <derivedcompoundref refid="class_a_pawn_turret" prot="public" virt="non-virtual">APawnTurret</derivedcompoundref>
+    <derivedcompoundref refid="class_a_pawn_turret" prot="public" virt="non-virtual">APawnTurret</derivedcompoundref>
+    <includes refid="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" local="no">PawnBase.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_pawn_base_1a22aadba6b80d73478e77cabc5a34a688" prot="private" static="no" mutable="no">
+        <type>UCapsuleComponent *</type>
+        <definition>UCapsuleComponent * APawnBase::CapsuleComponent</definition>
+        <argsstring></argsstring>
+        <name>CapsuleComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="22" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="11" endline="29">APawnBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1aaf8e8a9570fd31ac0cf9e82817e03e11" prot="private" static="no" mutable="no">
+        <type>UStaticMeshComponent *</type>
+        <definition>UStaticMeshComponent * APawnBase::BaseMesh</definition>
+        <argsstring></argsstring>
+        <name>BaseMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="25" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="11" endline="29">APawnBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1ae6bff82c0605f94aa964c51af097695c" prot="private" static="no" mutable="no">
+        <type>UStaticMeshComponent *</type>
+        <definition>UStaticMeshComponent * APawnBase::TurretMesh</definition>
+        <argsstring></argsstring>
+        <name>TurretMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="28" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="11" endline="29">APawnBase</referencedby>
+        <referencedby refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="31" endline="38">RotateTurret</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1ad6c8b14429e85b407d3da2d96c54b100" prot="private" static="no" mutable="no">
+        <type>USceneComponent *</type>
+        <definition>USceneComponent * APawnBase::ProjectileSpawnPoint</definition>
+        <argsstring></argsstring>
+        <name>ProjectileSpawnPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="31" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="11" endline="29">APawnBase</referencedby>
+        <referencedby refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="40" endline="48">Fire</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1a09dde536b3e37518a21adad74760abc0" prot="private" static="no" mutable="no">
+        <type><ref refid="_health_component_8h_1ac6fcbe6e8f5e309df86fa5c2adfede84" kindref="member">UHealthComponent</ref> *</type>
+        <definition>UHealthComponent * APawnBase::HealthComponent</definition>
+        <argsstring></argsstring>
+        <name>HealthComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="34" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="11" endline="29">APawnBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1a06770698dc7b0a4455db80ffab3c4851" prot="private" static="no" mutable="no">
+        <type>TSubclassOf&lt; <ref refid="class_a_projectile_base" kindref="compound">AProjectileBase</ref> &gt;</type>
+        <definition>TSubclassOf&lt; AProjectileBase &gt; APawnBase::ProjectileClass</definition>
+        <argsstring></argsstring>
+        <name>ProjectileClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="38" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="40" endline="48">Fire</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1a6a908f9040914038e50e78253387831a" prot="private" static="no" mutable="no">
+        <type>UParticleSystem *</type>
+        <definition>UParticleSystem * APawnBase::DeathParticle</definition>
+        <argsstring></argsstring>
+        <name>DeathParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="41" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="54" endline="59">HandleDestruction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1a979ab997f9625348cd74c7ca1aeeb2a1" prot="private" static="no" mutable="no">
+        <type>USoundBase *</type>
+        <definition>USoundBase * APawnBase::DeathSound</definition>
+        <argsstring></argsstring>
+        <name>DeathSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="44" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="54" endline="59">HandleDestruction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_pawn_base_1af76535f904b8f2fba7aa7c07c57a5826" prot="private" static="no" mutable="no">
+        <type>TSubclassOf&lt; UCameraShake &gt;</type>
+        <definition>TSubclassOf&lt; UCameraShake &gt; APawnBase::DeathShake</definition>
+        <argsstring></argsstring>
+        <name>DeathShake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="47" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8cpp" startline="54" endline="59">HandleDestruction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>APawnBase::APawnBase</definition>
+        <argsstring>()</argsstring>
+        <name>APawnBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="51" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp" bodystart="11" bodyend="29"/>
+        <references refid="class_a_pawn_base_1aaf8e8a9570fd31ac0cf9e82817e03e11" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="25">BaseMesh</references>
+        <references refid="class_a_pawn_base_1a22aadba6b80d73478e77cabc5a34a688" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="22">CapsuleComponent</references>
+        <references refid="class_a_pawn_base_1a09dde536b3e37518a21adad74760abc0" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="34">HealthComponent</references>
+        <references refid="class_a_pawn_base_1ad6c8b14429e85b407d3da2d96c54b100" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="31">ProjectileSpawnPoint</references>
+        <references refid="class_a_pawn_base_1ae6bff82c0605f94aa964c51af097695c" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="28">TurretMesh</references>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::PawnDestroyed</definition>
+        <argsstring>()</argsstring>
+        <name>PawnDestroyed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="53" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void APawnBase::HandleDestruction</definition>
+        <argsstring>()</argsstring>
+        <name>HandleDestruction</name>
+        <reimplementedby refid="class_a_pawn_turret_1aada87f18d08f0cb4c79da4fcd5618d0c">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_tank_1aff3381b0bf2208963bd7d0eed0a7e85b">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880">HandleDestruction</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="54" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp" bodystart="54" bodyend="59"/>
+        <references refid="class_a_pawn_base_1a6a908f9040914038e50e78253387831a" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="41">DeathParticle</references>
+        <references refid="class_a_pawn_base_1af76535f904b8f2fba7aa7c07c57a5826" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="47">DeathShake</references>
+        <references refid="class_a_pawn_base_1a979ab997f9625348cd74c7ca1aeeb2a1" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="44">DeathSound</references>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>APawnBase::APawnBase</definition>
+        <argsstring>()</argsstring>
+        <name>APawnBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::PawnDestroyed</definition>
+        <argsstring>()</argsstring>
+        <name>PawnDestroyed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1afaec61d9a9672359672227ccdeeb2af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void APawnBase::HandleDestruction</definition>
+        <argsstring>()</argsstring>
+        <name>HandleDestruction</name>
+        <reimplementedby refid="class_a_pawn_turret_1aada87f18d08f0cb4c79da4fcd5618d0c">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_tank_1aff3381b0bf2208963bd7d0eed0a7e85b">HandleDestruction</reimplementedby>
+        <reimplementedby refid="class_a_pawn_tank_1a960cb3b719a8ceb87d370dffff28a880">HandleDestruction</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::RotateTurret</definition>
+        <argsstring>(FVector LookAtTarget)</argsstring>
+        <name>RotateTurret</name>
+        <param>
+          <type>FVector</type>
+          <declname>LookAtTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="57" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp" bodystart="31" bodyend="38"/>
+        <references refid="class_a_pawn_base_1ae6bff82c0605f94aa964c51af097695c" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="28">TurretMesh</references>
+        <referencedby refid="class_a_pawn_tank_1a26cb6c25f5cff55eee52dd094f37c21a" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" startline="67" endline="81">APawnTank::Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::Fire</definition>
+        <argsstring>()</argsstring>
+        <name>Fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="59" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.cpp" bodystart="40" bodyend="48"/>
+        <references refid="class_a_pawn_base_1a06770698dc7b0a4455db80ffab3c4851" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="38">ProjectileClass</references>
+        <references refid="class_a_pawn_base_1ad6c8b14429e85b407d3da2d96c54b100" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h" startline="31">ProjectileSpawnPoint</references>
+        <referencedby refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" startline="32" endline="40">APawnTurret::CheckFireCondition</referencedby>
+        <referencedby refid="class_a_pawn_tank_1a435631e026a4b6d66f12cec40c02a54f" compoundref="_1_2toontanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8cpp" startline="84" endline="91">APawnTank::SetupPlayerInputComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::RotateTurret</definition>
+        <argsstring>(FVector LookAtTarget)</argsstring>
+        <name>RotateTurret</name>
+        <param>
+          <type>FVector</type>
+          <declname>LookAtTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APawnBase::Fire</definition>
+        <argsstring>()</argsstring>
+        <name>Fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnBase.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>APawnBase</label>
+        <link refid="class_a_pawn_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>APawn</label>
+      </node>
+      <node id="3">
+        <label>APawnTurret</label>
+        <link refid="class_a_pawn_turret"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>APawnTank</label>
+        <link refid="class_a_pawn_tank"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>APawnBase</label>
+        <link refid="class_a_pawn_base"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>APawn</label>
+      </node>
+    </collaborationgraph>
+    <location file="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" line="16" column="1" bodyfile="d:/toontanks/Source/ToonTanks/Pawns/PawnBase.h" bodystart="15" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" virt="non-virtual"><scope>APawnBase</scope><name>APawnBase</name></member>
+      <member refid="class_a_pawn_base_1a46941ede14f83164d71ac8be86abdd16" prot="public" virt="non-virtual"><scope>APawnBase</scope><name>APawnBase</name></member>
+      <member refid="class_a_pawn_base_1aaf8e8a9570fd31ac0cf9e82817e03e11" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>BaseMesh</name></member>
+      <member refid="class_a_pawn_base_1a22aadba6b80d73478e77cabc5a34a688" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>CapsuleComponent</name></member>
+      <member refid="class_a_pawn_base_1a6a908f9040914038e50e78253387831a" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>DeathParticle</name></member>
+      <member refid="class_a_pawn_base_1af76535f904b8f2fba7aa7c07c57a5826" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>DeathShake</name></member>
+      <member refid="class_a_pawn_base_1a979ab997f9625348cd74c7ca1aeeb2a1" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>DeathSound</name></member>
+      <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" virt="non-virtual"><scope>APawnBase</scope><name>Fire</name></member>
+      <member refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" prot="protected" virt="non-virtual"><scope>APawnBase</scope><name>Fire</name></member>
+      <member refid="class_a_pawn_base_1a4f193d6caa427f1eb87a2afdae7cf4f2" prot="public" virt="virtual"><scope>APawnBase</scope><name>HandleDestruction</name></member>
+      <member refid="class_a_pawn_base_1afaec61d9a9672359672227ccdeeb2af0" prot="public" virt="virtual"><scope>APawnBase</scope><name>HandleDestruction</name></member>
+      <member refid="class_a_pawn_base_1a09dde536b3e37518a21adad74760abc0" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>HealthComponent</name></member>
+      <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" virt="non-virtual"><scope>APawnBase</scope><name>PawnDestroyed</name></member>
+      <member refid="class_a_pawn_base_1a212f3e1819bff6b5dfe5a832114c1ead" prot="public" virt="non-virtual"><scope>APawnBase</scope><name>PawnDestroyed</name></member>
+      <member refid="class_a_pawn_base_1a06770698dc7b0a4455db80ffab3c4851" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>ProjectileClass</name></member>
+      <member refid="class_a_pawn_base_1ad6c8b14429e85b407d3da2d96c54b100" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>ProjectileSpawnPoint</name></member>
+      <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" virt="non-virtual"><scope>APawnBase</scope><name>RotateTurret</name></member>
+      <member refid="class_a_pawn_base_1a64cc17273f22a954c01be94419e99f5c" prot="protected" virt="non-virtual"><scope>APawnBase</scope><name>RotateTurret</name></member>
+      <member refid="class_a_pawn_base_1ae6bff82c0605f94aa964c51af097695c" prot="private" virt="non-virtual"><scope>APawnBase</scope><name>TurretMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

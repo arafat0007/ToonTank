@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_player_controller_base_8h" kind="file">
+    <compoundname>PlayerControllerBase.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">GameFramework/PlayerController.h</includes>
+    <includes local="yes">PlayerControllerBase.generated.h</includes>
+    <includedby refid="_tank_game_mode_base_8cpp" local="yes">d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp</includedby>
+    <includedby refid="_player_controller_base_8cpp" local="yes">d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.cpp</includedby>
+    <incdepgraph>
+      <node id="189">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="191">
+        <label>PlayerControllerBase.generated.h</label>
+      </node>
+      <node id="190">
+        <label>GameFramework/PlayerController.h</label>
+      </node>
+      <node id="188">
+        <label>d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h</label>
+        <link refid="PlayerControllerBase.h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="193">
+        <label>d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp</label>
+        <link refid="_tank_game_mode_base_8cpp"/>
+      </node>
+      <node id="194">
+        <label>d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.cpp</label>
+        <link refid="_player_controller_base_8cpp"/>
+      </node>
+      <node id="192">
+        <label>d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h</label>
+        <link refid="PlayerControllerBase.h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_a_player_controller_base" prot="public">APlayerControllerBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameFramework/PlayerController.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;PlayerControllerBase.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">UCLASS()</highlight></codeline>
+<codeline lineno="13" refid="class_a_player_controller_base" refkind="compound"><highlight class="normal">class<sp/>TOONTANKS_API<sp/><ref refid="class_a_player_controller_base" kindref="compound">APlayerControllerBase</ref><sp/>:<sp/>public<sp/>APlayerController</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPlayerEnabledState(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPlayerEnabled);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="d:/toontanks/Source/ToonTanks/PlayerControllers/PlayerControllerBase.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8cpp" kind="file">
+    <compoundname>PawnTurret.cpp</compoundname>
+    <includes refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" local="yes">PawnTurret.h</includes>
+    <includes local="yes">Kismet/GamePlayStatics.h</includes>
+    <includes refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" local="yes">PawnTank.h</includes>
+    <incdepgraph>
+      <node id="155">
+        <label>PawnTurret.h</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>PawnBase.generated.h</label>
+      </node>
+      <node id="156">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="157">
+        <label>PawnBase.h</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_base_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>PawnTank.generated.h</label>
+      </node>
+      <node id="161">
+        <label>Kismet/GamePlayStatics.h</label>
+      </node>
+      <node id="160">
+        <label>PawnTurret.generated.h</label>
+      </node>
+      <node id="158">
+        <label>GameFramework/Pawn.h</label>
+      </node>
+      <node id="162">
+        <label>PawnTank.h</label>
+        <link refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.cpp</label>
+        <link refid=":/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.cpp"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_turret_8h" kindref="compound">PawnTurret.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Kismet/GamePlayStatics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_1_2_toon_tanks_2_source_2_toon_tanks_2_pawns_2_pawn_tank_8h" kindref="compound">PawnTank.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>when<sp/>the<sp/>game<sp/>starts<sp/>or<sp/>when<sp/>spawned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_turret_1ac475cca1155611e69013fa38de945601" kindref="member">APawnTurret::BeginPlay</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kindref="member">Super::BeginPlay</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>GetWorld()-&gt;GetTimerManager().SetTimer(<ref refid="class_a_pawn_turret_1a7a6149cecfdb46817439b6efd8e674dc" kindref="member">FireRateTimerHandle</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" kindref="member">APawnTurret::CheckFireCondition</ref>,<sp/><ref refid="class_a_pawn_turret_1a448016e6b3032fddf443128524b38a85" kindref="member">FireRate</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight><highlight class="comment">//setting<sp/>own<sp/>class&apos;s<sp/>function<sp/>to<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref><sp/>=<sp/>Cast&lt;APawnTank&gt;(UGameplayStatics::GetPlayerPawn(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0));<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>every<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_turret_1afe1b550cb34683ff43503a77d94417f7" kindref="member">APawnTurret::Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::Tick(DeltaTime);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref><sp/>||<sp/><ref refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" kindref="member">ReturnDistanceToPlayer</ref>()<sp/>&gt;<sp/><ref refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" kindref="member">FireRange</ref>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::RotateTurret(<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref>-&gt;GetActorLocation());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_turret_1a4a116a30679b93e53688ffb4105afc39" kindref="member">APawnTurret::CheckFireCondition</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref><sp/>||<sp/>!<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref>-&gt;<ref refid="class_a_pawn_tank_1aa5dfed747d5244a8bc5d7829ab7d07bc" kindref="member">GetIsPlayerAlive</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" kindref="member">ReturnDistanceToPlayer</ref>()<sp/>&lt;=<sp/><ref refid="class_a_pawn_turret_1a4b0112b9bbdac41ed8aaabac8afbbb42" kindref="member">FireRange</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_base_1a65f04ee3b63757afd44e83daaaab4ac8" kindref="member">Fire</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_turret_1a0190aa89304cb0bc304633b637665756" kindref="member">APawnTurret::ReturnDistanceToPlayer</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0f;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FVector::Dist(<ref refid="class_a_pawn_turret_1a173599c64fbbd42a4406530c32deb6f8" kindref="member">PlayerPawn</ref>-&gt;GetActorLocation(),<sp/>GetActorLocation());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_pawn_turret_1ae14837ac5f2d05bb91db5c29571d9f4d" kindref="member">APawnTurret::HandleDestruction</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>base<sp/>pawn<sp/>class<sp/>HandleDestruction<sp/>to<sp/>play<sp/>effects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::HandleDestruction();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>Destroy();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/ToonTanks/Source/ToonTanks/Pawns/PawnTurret.cpp"/>
+  </compounddef>
+</doxygen>

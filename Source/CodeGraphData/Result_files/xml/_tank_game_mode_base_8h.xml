@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_tank_game_mode_base_8h" kind="file">
+    <compoundname>TankGameModeBase.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">GameFramework/GameModeBase.h</includes>
+    <includes local="yes">TankGameModeBase.generated.h</includes>
+    <includedby refid="_tank_game_mode_base_8cpp" local="yes">d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp</includedby>
+    <includedby refid="_health_component_8cpp" local="yes">d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp</includedby>
+    <incdepgraph>
+      <node id="50">
+        <label>GameFramework/GameModeBase.h</label>
+      </node>
+      <node id="49">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="51">
+        <label>TankGameModeBase.generated.h</label>
+      </node>
+      <node id="48">
+        <label>d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h</label>
+        <link refid="TankGameModeBase.h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="53">
+        <label>d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.cpp</label>
+        <link refid="_tank_game_mode_base_8cpp"/>
+      </node>
+      <node id="54">
+        <label>d:/toontanks/Source/ToonTanks/Components/HealthComponent.cpp</label>
+        <link refid="_health_component_8cpp"/>
+      </node>
+      <node id="52">
+        <label>d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h</label>
+        <link refid="TankGameModeBase.h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_a_tank_game_mode_base" prot="public">ATankGameModeBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameFramework/GameModeBase.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TankGameModeBase.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_pawn_turret" kindref="compound">APawnTurret</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_pawn_tank" kindref="compound">APawnTank</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_player_controller_base" kindref="compound">APlayerControllerBase</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">UCLASS()</highlight></codeline>
+<codeline lineno="14" refid="class_a_tank_game_mode_base" refkind="compound"><highlight class="normal">class<sp/>TOONTANKS_API<sp/><ref refid="class_a_tank_game_mode_base" kindref="compound">ATankGameModeBase</ref><sp/>:<sp/>public<sp/>AGameModeBase</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_pawn_tank" kindref="compound">APawnTank</ref>*<sp/><ref refid="class_a_tank_game_mode_base_1a0e287fa3469ebca0f696cd36da31258e" kindref="member">PlayerTank</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_a_tank_game_mode_base_1a4c373f09e81971734a92cd3548b247df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>TargetTurrets<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21" refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_player_controller_base" kindref="compound">APlayerControllerBase</ref>*<sp/><ref refid="class_a_tank_game_mode_base_1ab5d5a115c825dfd36cec9c219e1a4094" kindref="member">PlayerControllerRef</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>GetTargetTurretCount();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HandleGameStart();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HandleGameOver(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PlayerWon);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ActorDied(AActor*<sp/>DeadActor);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditDefaultsOnly,<sp/>BlueprintReadOnly,<sp/>Category<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Game<sp/>Loop&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32" refid="class_a_tank_game_mode_base_1aaa7df7a9e6775b6c64609f8340576cbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>StartDelay<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_health_component_8h_1aef98595d38fb202dfac1c8915ca47ce1" kindref="member">BeginPlay</ref>()<sp/>override;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintImplementableEvent)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GameStart();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintImplementableEvent)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GameOver(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PlayerWon);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="d:/toontanks/Source/ToonTanks/GameModes/TankGameModeBase.h"/>
+  </compounddef>
+</doxygen>

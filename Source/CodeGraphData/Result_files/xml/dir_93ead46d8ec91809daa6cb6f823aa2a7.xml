@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_93ead46d8ec91809daa6cb6f823aa2a7" kind="dir">
+    <compoundname>d:/toontanks/Source/ToonTanks</compoundname>
+    <innerdir refid="dir_bb9e782cf27604404f5afd6757a0c2ae">d:/toontanks/Source/ToonTanks/Actors</innerdir>
+    <innerdir refid="dir_f3a1fc536a2cf06e45bb3f93778c5e4b">d:/toontanks/Source/ToonTanks/Components</innerdir>
+    <innerdir refid="dir_75d947172194fab1020c6d07c00d74c0">d:/toontanks/Source/ToonTanks/GameModes</innerdir>
+    <innerdir refid="dir_8104b8d15d6ffb984a6fd5f12403af1a">d:/toontanks/Source/ToonTanks/Pawns</innerdir>
+    <innerdir refid="dir_a4d380dfb1e1e662aa1420a32a8323c2">d:/toontanks/Source/ToonTanks/PlayerControllers</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="d:/toontanks/Source/ToonTanks/"/>
+  </compounddef>
+</doxygen>
